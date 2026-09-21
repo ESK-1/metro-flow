@@ -143,6 +143,7 @@ if "route_summary" in st.session_state:
             st.switch_page("pages/network_explorer.py")
 
     st.markdown('<div class="section-title">Crowd Analysis Along Route</div>', unsafe_allow_html=True)
+    render_crowd_table(st.session_state["route_crowd"])
 
     st.markdown('<div class="section-title">AI Recommendations</div>', unsafe_allow_html=True)
     render_ai_recommendation_card(st.session_state["ai_recommendations"])
